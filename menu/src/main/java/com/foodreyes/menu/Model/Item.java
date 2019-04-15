@@ -1,7 +1,6 @@
 package com.foodreyes.menu.Model;
 
 
-import org.hibernate.tool.schema.extract.spi.ColumnInformation;
 
 import javax.persistence.*;
 
@@ -31,6 +30,14 @@ public class Item {
 
     public void setId(Long id) {
         this.id = id;
+    }
+
+    public byte[] getImage() {
+        return image;
+    }
+
+    public void setImage(byte[] image) {
+        this.image = image;
     }
 
     public String getName() {
