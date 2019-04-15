@@ -1,6 +1,8 @@
 package com.foodreyes.menu.Model;
 
 
+import org.hibernate.tool.schema.extract.spi.ColumnInformation;
+
 import javax.persistence.*;
 
 @Entity
@@ -10,6 +12,9 @@ public class Item {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long id;
+
+    @Column
+    private byte[] image;
 
     String name;
     Double price;
