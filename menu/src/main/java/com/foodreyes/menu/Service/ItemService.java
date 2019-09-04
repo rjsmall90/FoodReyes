@@ -5,6 +5,9 @@ import com.foodreyes.menu.Repository.ItemRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.ArrayList;
+import java.util.List;
+
 @Service
 public class ItemService {
 
@@ -18,8 +21,11 @@ public class ItemService {
         return itemRepo.save(item);
     }
 
-    public Item find(Long itemId) {
-        return itemRepo.findById(itemId).get();
+    public List<Item> findAll() {
+        return new ArrayList<>(itemRepo.findAll());
+    }
+    public Item find(String name) {
+        return itemRepo.findByName(name);
     }
     public void delete(Item item) {
         itemRepo.delete(item);
