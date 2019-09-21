@@ -12,24 +12,24 @@ import java.util.List;
 public class ItemController {
 
     @Autowired
-    ItemService itemService;git branch
+    ItemService itemService;
 
-    @PostMapping(value ="/add")
+    @PostMapping(value ="/item/add")
     public Item addItem(@RequestBody Item item) {
         return itemService.save(item);
     }
 
-    @GetMapping(value = "/find_all")
+    @GetMapping(value = "/item/find_all")
     public List<Item> findAll(){
         return itemService.findAll();
     }
 
-    @GetMapping(value = "findByName{name}")
-    public Item findAll(@RequestBody Item item) {
-        return itemService.find(item.getName());
+    @GetMapping(value = "/item/findByName{name}")
+    public Item findByName(@RequestBody String item) {
+        return itemService.find(item);
     }
 
-    @DeleteMapping(value = "/delete")
+    @DeleteMapping(value = "/item/delete")
     public void deleteItem(@RequestBody Item item) {
         itemService.delete(item);
     }
