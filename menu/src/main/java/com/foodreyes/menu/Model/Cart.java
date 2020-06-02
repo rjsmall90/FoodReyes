@@ -8,7 +8,7 @@ import java.util.List;
 public class Cart {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    Long id;
+    Long orderNumber;
 
     @ManyToOne(targetEntity = Item.class)
     List<Item> itemId;
@@ -16,17 +16,17 @@ public class Cart {
     Double total;
 
     public Cart(Long id, List<Item> items, Double total) {
-        this.id = id;
+        this.orderNumber = id;
         this.itemId = items;
         this.total = total;
     }
 
-    public Long getId() {
-        return id;
+    public Long getOrderNumber() {
+        return orderNumber;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setOrderNumber(Long id) {
+        this.orderNumber = id;
     }
 
     public List<Item> getItems() {
