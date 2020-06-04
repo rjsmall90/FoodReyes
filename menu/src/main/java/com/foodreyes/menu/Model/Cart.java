@@ -10,10 +10,10 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long orderNumber;
 
-    @ManyToOne(targetEntity = Item.class)
-    List<Item> itemId;
+    @OneToOne(targetEntity = Item.class)
+    List<Item> item;
 
-    Double total;
+    String total;
 
     public Long getOrderNumber() {
         return orderNumber;
@@ -24,18 +24,18 @@ public class Cart {
     }
 
     public List<Item> getItems() {
-        return itemId;
+        return this.item;
     }
 
     public void setItems(List<Item> items) {
-        this.itemId = items;
+        this.item = items;
     }
 
-    public Double getTotal() {
+    public String getTotal() {
         return total;
     }
 
-    public void setTotal(Double total) {
+    public void setTotal(String total) {
         this.total = total;
     }
 }

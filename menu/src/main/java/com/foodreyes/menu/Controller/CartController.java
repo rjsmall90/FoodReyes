@@ -5,32 +5,38 @@ import com.foodreyes.menu.Model.Cart;
 import com.foodreyes.menu.Model.Item;
 import com.foodreyes.menu.Service.CartService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
 public class CartController {
 
+
     @Autowired
     CartService cartService;
 
-    Item item;
+    Cart cart;
 
-    public List<Item> orders;
+    List<Item> orders = new ArrayList<>();
 
-    @PostMapping(value = "/cart/add_to_cart")
-    public void addToCart(@RequestBody Cart cart) {
+    @PostMapping(value = "/cart/addItems")
+    public void addToCart(@RequestBody Item item) {
         orders.add(item);
-        cart.setItems(orders);
+//
+    }
+
+    @GetMapping(value="/cart/openCart")
+    public List<Item> viewCart() {
+        return orders;
     }
 
     @PostMapping(value = "/cart/submit_order")
-    public Cart addOrder(@RequestBody Cart cart) {
+    public Cart addOrder() {
         return cartService.save(cart);
     }
+
 
 
 

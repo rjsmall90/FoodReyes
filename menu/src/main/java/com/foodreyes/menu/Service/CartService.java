@@ -17,23 +17,15 @@ public class CartService {
 
 
     public Cart save(Cart cart){
-        return cartRepo.saveAndFlush(cart);
-    }
-
-    public Cart update(Cart cart) {
         return cartRepo.save(cart);
     }
 
-        public Cart findAllItems(Cart cart){
-        return cartRepo.findAll(cart.getItems());
+    public void delete(Cart cart) {
+        cartRepo.delete(cart);
+
     }
-
-
-//    public Cart find(Long cartId) {
-//        return cartRepo.findById(cartId).get();
+//    public Cart update(List<T> cart) {
+//        return cartRepo.saveAndFlush(cart);
 //    }
 
-//    public void delete(Cart cart) {
-//        cartRepo.delete(cart);
-//    }
 }

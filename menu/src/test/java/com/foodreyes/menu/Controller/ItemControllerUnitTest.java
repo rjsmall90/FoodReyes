@@ -29,8 +29,7 @@ public class ItemControllerUnitTest {
     @MockBean
     private ItemService service;
 
-    Item item = new Item(1L, "Pudding Pops", 1.50);
-
+    Item item;
     @Test
     public void getAddedItemByName() throws Exception {
         service.save(item);
