@@ -15,12 +15,6 @@ public class Cart {
 
     Double total;
 
-    public Cart(Long id, List<Item> items, Double total) {
-        this.orderNumber = id;
-        this.itemId = items;
-        this.total = total;
-    }
-
     public Long getOrderNumber() {
         return orderNumber;
     }
