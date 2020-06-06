@@ -14,6 +14,10 @@ public class CartService {
     @Autowired
     CartRepo cartRepo;
 
+    public CartService(CartRepo cartRepo) {
+        this.cartRepo = cartRepo;
+    }
+
     public Cart save(Cart cart){
         return cartRepo.save(cart);
     }
@@ -22,8 +26,8 @@ public class CartService {
         cartRepo.delete(cart);
 
     }
-    public Cart update(List<Cart> cart) {
-        return cartRepo.saveAndFlush();
+    public Cart update(Cart cart) {
+        return cartRepo.saveAndFlush(cart);
     }
 
 }
