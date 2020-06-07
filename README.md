@@ -1,12 +1,13 @@
 # FoodReyes
 This REST API was intended as a backend for a store/restaraunt, customer-facing ordering application. Customer would be able to enter location, then use application to add **Items** to a **Cart** and checkout.
-A simple CRUD repository, allows storage and retrieval of **Items** into/from a PostgreSQL database.
-**Cart** is defined by orderNumber, list of **Items**, and total amount.
+Simple CRUD repository, allows storage and retrieval of **Items** into/from a PostgreSQL database.
 
-An **Item** is defined by it's name, price & quantity.  **Inventory** is the management service for the **Items**
-**Items** would be stored in database to be called on by the application, while customer **Cart** would be cataloged and **Inventory** updated.
 
-*Future versions would have established an adminstrator and OAuth components in order to update* **Inventory** *by adding* **Items**. 
+A **Cart** is defined by orderNumber, list of **Items**, and total amount.
+
+An **Item** is defined by it's name, price & quantity.  
+*Future versions would have established an adminstrator and auth/security components in order to update* **Item** "Inventory" *by adding* **Items**. 
+**Item** added to **Cart**, once order submitted **Cart** gets added to database and **Item** quanity adjusts accordingly. 
 
 
 ## Getting Started
