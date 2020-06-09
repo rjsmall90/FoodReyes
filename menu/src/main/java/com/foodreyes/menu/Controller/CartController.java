@@ -23,8 +23,6 @@ public class CartController {
 
     List<Item> orders = new ArrayList<>();
 
-
-
     @PostMapping(value = "/cart/addItems")
     public void addToCart(@RequestBody Item item) {
         orders.add(item);
@@ -37,6 +35,7 @@ public class CartController {
 
     @PostMapping(value = "/cart/submit_order")
     public Cart addOrder() {
+        cart.setItems(orders);
         return cartService.save(cart);
     }
 

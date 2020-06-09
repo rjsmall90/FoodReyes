@@ -22,8 +22,8 @@ public class CartService {
         cartRepo.delete(cart);
 
     }
-    public Cart update(List<Cart> cart) {
-        return cartRepo.saveAndFlush();
-    }
+//    public Cart update(List<Cart> cart) {
+//        return cartRepo.saveAndFlush();
+//    }
 
 }

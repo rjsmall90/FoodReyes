@@ -17,6 +17,15 @@ public class Item {
 
     String name;
     Double price;
+    Long quantity;
+
+    public Long getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Long quantity) {
+        this.quantity = quantity;
+    }
 
     public Long getId() {
         return id;

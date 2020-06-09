@@ -10,7 +10,7 @@ public class Cart {
     @GeneratedValue(strategy = GenerationType.AUTO)
     Long orderNumber;
 
-    @OneToOne(targetEntity = Item.class)
+    @ManyToOne(targetEntity = Item.class)
     List<Item> item;
 
     String total;
