@@ -2,7 +2,6 @@ package com.foodreyes.menu.customers;
 
 import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
-import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -16,10 +15,6 @@ public class CustomerService {
     Customer createCustomer(Customer customer) {
         return customerRepository.save(customer);
     }
-    
-//    String findCustomerIdByUsername(String username) {
-//        return customerRepository.findCustomerIdByUsername(username).toString().replaceAll("\\-", "");
-//    }
 
     String findCustomerIdByUsername(String username) {
         return customerRepository.findCustomerIdByUsername(username).toString();

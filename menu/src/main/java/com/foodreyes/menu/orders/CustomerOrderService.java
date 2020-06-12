@@ -10,7 +10,6 @@ public class CustomerOrderService {
     private final CustomerOrderRepository customerOrderRepository;
 
     CustomerOrder createOrder(CustomerOrder customerOrder) {
-        CustomerOrder newCustomerOrder = customerOrderRepository.save(customerOrder);
-        return newCustomerOrder;
+        return customerOrderRepository.save(customerOrder);
     }
 }

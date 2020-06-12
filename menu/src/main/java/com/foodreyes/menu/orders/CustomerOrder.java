@@ -19,8 +19,8 @@ public class CustomerOrder extends BaseEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "order_id")
-    private Long orderId;
+    @Column(name = "order_number")
+    private Long orderNumber;
 
     @Column(name = "customer_id")
     private UUID customerId;

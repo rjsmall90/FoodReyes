@@ -10,9 +10,8 @@ import java.util.UUID;
 @Repository
 public interface CustomerOrderRepository extends JpaRepository<CustomerOrder, Long> {
 
-    @Query("Select co " +
-            "From CustomerOrder co " +
-            "Where co.customerId = :customerId " +
-            "And co.paid = false")
+    @Query(value = "Select * From orders " +
+            "Where orders.customer_id = :customerId " +
+            "And orders.is_paid = false", nativeQuery = true)
     CustomerOrder findNotCompletedCustomerOrderByCustomerId(@Param("customerId") UUID customerId);
 }

@@ -7,8 +7,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor
@@ -21,31 +21,37 @@ public class CartSelectionService {
     CartSelection addItemToCart(CartSelection cartSelection) {
         CustomerOrder customerOrder;
 
-        if (cartSelectionRepository.findCustomerOrderCountByCustomerId(cartSelection.getCustomerId()) == null) {
+        if (cartSelectionRepository.findCustomerOrderCountByCustomerId(cartSelection.getCustomerId()) == 0) {
+            System.out.println("Please not here");
             customerOrder = new CustomerOrder();
             customerOrder.setCustomerId(cartSelection.getCustomerId());
         } else {
             customerOrder = customerOrderRepository.findNotCompletedCustomerOrderByCustomerId(cartSelection.getCustomerId());
         }
 
-        List<CartSelection> cartSelections = findAllCartSelectionsForCustomer(cartSelection.getCustomerId());
+        List<CartSelection> cartSelections = findAllCartSelectionsForCustomer(cartSelection);
 
         customerOrder.setOrderTotal(getCurrentOrderTotal(cartSelections));
+        customerOrderRepository.save(customerOrder);
 
-        cartSelection.setOrderNumber(customerOrder.getOrderId());
+        cartSelection.setOrderNumber(customerOrder.getOrderNumber());
         return cartSelectionRepository.save(cartSelection);
     }
 
-    private List<CartSelection> findAllCartSelectionsForCustomer(UUID customerId) {
-        return cartSelectionRepository.findAllCartSelectionsByCustomerId(customerId);
+    private List<CartSelection> findAllCartSelectionsForCustomer(CartSelection cartSelection) {
+        List<CartSelection> cartSelections = cartSelectionRepository.findAllCartSelectionsByCustomerId(cartSelection.getCustomerId());
+        cartSelections.add(cartSelection);
+        return cartSelections;
     }
 
     private BigDecimal getCurrentOrderTotal(List<CartSelection> cartSelections) {
-        BigDecimal currentTotal = BigDecimal.ZERO;
+        List<BigDecimal> itemPrices = new ArrayList<>();
         for (CartSelection cartSelection : cartSelections) {
             BigDecimal itemPrice = itemRepository.findItemByItemId(cartSelection.getItemId()).getPrice();
-            currentTotal.add(itemPrice);
+            itemPrices.add(itemPrice);
         }
+        BigDecimal currentTotal = itemPrices.stream().reduce(BigDecimal.ZERO, BigDecimal::add);
+        System.out.println(currentTotal);
         return currentTotal;
     }
 }
