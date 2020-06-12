@@ -1,12 +1,10 @@
 package com.foodreyes.menu.carts;
 
 import com.foodreyes.menu.core.BaseEntity;
+import com.sun.tools.javah.Gen;
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.UUID;
 
 @Getter
@@ -19,6 +17,10 @@ import java.util.UUID;
 class CartSelection extends BaseEntity {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "shopping_cart_id")
+    private Long cartId;
+
     @Column(name = "customer_id")
     private UUID customerId;
 
