@@ -16,10 +16,6 @@ public class CustomerService {
         return customerRepository.save(customer);
     }
 
-    String findCustomerIdByUsername(String username) {
-        return customerRepository.findCustomerIdByUsername(username).toString();
-    }
-
     List<Customer> findAllCustomers() {
         return customerRepository.findAll();
     }

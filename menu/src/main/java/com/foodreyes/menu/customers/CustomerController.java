@@ -23,9 +23,4 @@ public class CustomerController {
     public ResponseEntity<List<Customer>> findAllCustomers() {
         return ResponseEntity.ok(customerService.findAllCustomers());
     }
-
-    @GetMapping("/customers/{username}")
-    public ResponseEntity<String> getCustomerIdByUsername(@PathVariable("username") String username) {
-        return ResponseEntity.ok(customerService.findCustomerIdByUsername(username));
-    }
 }
