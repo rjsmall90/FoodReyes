@@ -4,6 +4,7 @@ import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.transaction.Transactional;
 import java.util.List;
 
 @Service
@@ -12,11 +13,12 @@ class ItemService {
 
     private final ItemRepository itemRepository;
 
-    public Item save(Item item){
-        return itemRepository.saveAndFlush(item);
+    Item createItem(Item item){
+        return itemRepository.save(item);
     }
 
-    public Item update(Item item) {
+    @Transactional
+    Item updateItem(Item item) {
         return itemRepository.save(item);
     }
 
@@ -24,11 +26,12 @@ class ItemService {
         return itemRepository.findAll();
     }
 
-    public Item findItemById(Long itemId) {
+    Item findItemById(Long itemId) {
         return itemRepository.getOne(itemId);
     }
 
-    public void delete(Item item) {
+    void deleteItem(Long itemId) {
+        Item item = itemRepository.findItemByItemId(itemId);
         itemRepository.delete(item);
     }
 

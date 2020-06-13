@@ -1,6 +1,7 @@
 package com.foodreyes.menu.items;
 
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -13,9 +14,9 @@ public class ItemController {
 
     private final ItemService itemService;
 
-    @PostMapping(value ="/item/add")
-    public Item addItem(@RequestBody Item item) {
-        return itemService.save(item);
+    @PostMapping(value ="/items")
+    public ResponseEntity<Item> addItem(@RequestBody Item item) {
+        return new ResponseEntity<>(itemService.createItem(item), HttpStatus.CREATED);
     }
 
     @GetMapping(value = "/items")
@@ -23,14 +24,20 @@ public class ItemController {
         return ResponseEntity.ok(itemService.findAllItems());
     }
 
-    @GetMapping(value = "/{itemId}/items")
-    public ResponseEntity<Item> findByName(@PathVariable("itemId") Long itemId) {
+    @GetMapping(value = "/items/{itemId}")
+    public ResponseEntity<Item> findItemByItemId(@PathVariable("itemId") Long itemId) {
         return ResponseEntity.ok(itemService.findItemById(itemId));
     }
 
-    @DeleteMapping(value = "/item/delete")
-    public void deleteItem(@RequestBody Item item) {
-        itemService.delete(item);
+    @PutMapping(value = "/items")
+    public ResponseEntity<Item> updateItem(@RequestBody Item item) {
+        return ResponseEntity.ok(itemService.updateItem(item));
+    }
+
+    @DeleteMapping(value = "/items/{itemId}")
+    public ResponseEntity<?> deleteItem(@PathVariable("itemId") Long itemId) {
+        itemService.deleteItem(itemId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
     }
 
 
