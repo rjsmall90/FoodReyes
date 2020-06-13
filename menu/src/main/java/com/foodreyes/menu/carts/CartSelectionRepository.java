@@ -20,4 +20,18 @@ public interface CartSelectionRepository extends JpaRepository<CartSelection, Lo
             "From CartSelection cs " +
             "Where cs.customerId = :customerId")
     List<CartSelection> findAllCartSelectionsByCustomerId(@Param("customerId") UUID customerId);
+
+    @Query("Select new com.foodreyes.menu.carts.CartSelectionDTO(" +
+            "cartSelection.cartId," +
+            "cartSelection.customerId," +
+            "cartSelection.orderNumber," +
+            "cartSelection.itemId," +
+            "item.name," +
+            "item.imageUrl," +
+            "item.price" +
+            ") " +
+            "From CartSelection cartSelection " +
+            "Join Item item On cartSelection.itemId = item.itemId " +
+            "Where cartSelection.customerId = :customerId ")
+    List<CartSelectionDTO> findDTOByCustomerId(@Param("customerId") UUID customerId);
 }

@@ -1,7 +1,6 @@
 package com.foodreyes.menu.carts;
 
 import com.foodreyes.menu.core.BaseEntity;
-import com.sun.tools.javah.Gen;
 import lombok.*;
 
 import javax.persistence.*;

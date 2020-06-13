@@ -3,6 +3,7 @@ package com.foodreyes.menu.carts;
 import com.foodreyes.menu.items.ItemRepository;
 import com.foodreyes.menu.orders.CustomerOrder;
 import com.foodreyes.menu.orders.CustomerOrderRepository;
+import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -12,17 +13,21 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor
+@RequiredArgsConstructor(access = AccessLevel.PACKAGE)
 public class CartSelectionService {
 
     private final CartSelectionRepository cartSelectionRepository;
     private final CustomerOrderRepository customerOrderRepository;
     private final ItemRepository itemRepository;
 
+    List<CartSelectionDTO> findAllCartSelectionsForCustomer(UUID customerId) {
+        return cartSelectionRepository.findDTOByCustomerId(customerId);
+    }
+
     CartSelection addItemToCart(CartSelection cartSelection) {
         CustomerOrder customerOrder = findOrCreateNewCustomerOrder(cartSelection.getCustomerId());
 
-        List<CartSelection> cartSelections = findAllCartSelectionsForCustomer(cartSelection);
+        List<CartSelection> cartSelections = findAllCartSelectionsForCustomerForCustomerOrderTotal(cartSelection);
 
         handleCustomerOrder(customerOrder, cartSelections);
 
@@ -48,7 +53,7 @@ public class CartSelectionService {
         return cartSelectionRepository.findCustomerOrderCountByCustomerId(customerId) != 0;
     }
 
-    private List<CartSelection> findAllCartSelectionsForCustomer(CartSelection cartSelection) {
+    private List<CartSelection> findAllCartSelectionsForCustomerForCustomerOrderTotal(CartSelection cartSelection) {
         List<CartSelection> cartSelections = cartSelectionRepository.findAllCartSelectionsByCustomerId(cartSelection.getCustomerId());
         cartSelections.add(cartSelection);
 
