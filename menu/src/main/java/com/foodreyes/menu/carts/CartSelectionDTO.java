@@ -10,7 +10,7 @@ import java.util.UUID;
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-class CartSelectionDTO {
+public class CartSelectionDTO {
     private Long cartId;
     private UUID customerId;
     private Long orderNumber;

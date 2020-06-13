@@ -21,7 +21,7 @@ public class CartSelectionService {
     private final ItemRepository itemRepository;
 
     List<CartSelectionDTO> findAllCartSelectionsForCustomer(UUID customerId) {
-        return cartSelectionRepository.findDTOByCustomerId(customerId);
+        return cartSelectionRepository.findCartSelectionDTOsByCustomerId(customerId);
     }
 
     CartSelection addItemToCart(CartSelection cartSelection) {

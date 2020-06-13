@@ -14,7 +14,7 @@ import java.util.UUID;
 @NoArgsConstructor
 @Entity
 @Table(name = "customers")
-class Customer extends BaseEntity {
+public class Customer extends BaseEntity {
 
     @Id
     @GeneratedValue(generator = "uuid2")

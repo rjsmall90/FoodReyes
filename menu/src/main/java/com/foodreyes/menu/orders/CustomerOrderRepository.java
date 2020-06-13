@@ -14,4 +14,9 @@ public interface CustomerOrderRepository extends JpaRepository<CustomerOrder, Lo
             "Where orders.customer_id = :customerId " +
             "And orders.is_paid = false", nativeQuery = true)
     CustomerOrder findNotCompletedCustomerOrderByCustomerId(@Param("customerId") UUID customerId);
+
+    @Query("Select co " +
+            "From CustomerOrder co " +
+            "Where co.orderNumber = :orderNumber")
+    CustomerOrder findByOrderNumber(Long orderNumber);
 }

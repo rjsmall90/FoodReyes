@@ -1,12 +1,8 @@
 package com.foodreyes.menu.orders;
 
 import lombok.RequiredArgsConstructor;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping("/api")
@@ -15,8 +11,8 @@ public class CustomerOrderController {
 
     private final CustomerOrderService customerOrderService;
 
-    @PostMapping("/orders")
-    public ResponseEntity<CustomerOrder> createNewOrder(@RequestBody CustomerOrder customerOrder) {
-        return new ResponseEntity<>(customerOrderService.createOrder(customerOrder), HttpStatus.CREATED);
+    @PutMapping("/orders/{orderNumber}")
+    public ResponseEntity<CustomerOrder> submitPaidOrder(@PathVariable("orderNumber") Long orderNumber) {
+        return ResponseEntity.ok(customerOrderService.submitPaidOrder(orderNumber));
     }
 }

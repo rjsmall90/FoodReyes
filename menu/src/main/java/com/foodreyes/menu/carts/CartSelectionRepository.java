@@ -33,5 +33,5 @@ public interface CartSelectionRepository extends JpaRepository<CartSelection, Lo
             "From CartSelection cartSelection " +
             "Join Item item On cartSelection.itemId = item.itemId " +
             "Where cartSelection.customerId = :customerId ")
-    List<CartSelectionDTO> findDTOByCustomerId(@Param("customerId") UUID customerId);
+    List<CartSelectionDTO> findCartSelectionDTOsByCustomerId(@Param("customerId") UUID customerId);
 }
