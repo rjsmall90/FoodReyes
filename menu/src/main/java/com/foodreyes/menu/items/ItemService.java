@@ -1,13 +1,14 @@
 package com.foodreyes.menu.items;
 
+import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@RequiredArgsConstructor
-public class ItemService {
+@RequiredArgsConstructor(access = AccessLevel.PACKAGE)
+class ItemService {
 
     private final ItemRepository itemRepository;
 

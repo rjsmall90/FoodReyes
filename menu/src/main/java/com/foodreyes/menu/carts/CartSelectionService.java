@@ -14,7 +14,7 @@ import java.util.UUID;
 
 @Service
 @RequiredArgsConstructor(access = AccessLevel.PACKAGE)
-public class CartSelectionService {
+class CartSelectionService {
 
     private final CartSelectionRepository cartSelectionRepository;
     private final CustomerOrderRepository customerOrderRepository;

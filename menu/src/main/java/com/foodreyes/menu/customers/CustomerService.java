@@ -8,7 +8,7 @@ import java.util.List;
 
 @Service
 @RequiredArgsConstructor(access = AccessLevel.PACKAGE)
-public class CustomerService {
+class CustomerService {
 
     private final CustomerRepository customerRepository;
 

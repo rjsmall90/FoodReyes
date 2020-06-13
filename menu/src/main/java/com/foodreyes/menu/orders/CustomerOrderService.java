@@ -1,12 +1,13 @@
 package com.foodreyes.menu.orders;
 
 import com.foodreyes.menu.notifications.CustomerOrderNotifier;
+import lombok.AccessLevel;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service
-@RequiredArgsConstructor
-public class CustomerOrderService {
+@RequiredArgsConstructor(access = AccessLevel.PACKAGE)
+class CustomerOrderService {
 
     private final CustomerOrderRepository customerOrderRepository;
     private final CustomerOrderMapper customerOrderMapper;
