@@ -1,5 +1,6 @@
 package com.foodreyes.menu.items;
 
+import com.foodreyes.menu.core.BaseEntity;
 import lombok.*;
 
 import javax.persistence.*;
@@ -13,7 +14,7 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 @Entity
 @Table(name = "item")
-public class Item implements Serializable {
+public class Item extends BaseEntity implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

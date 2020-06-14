@@ -8,9 +8,9 @@ import java.util.UUID;
 
 @Getter
 @Setter
-@Builder
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Entity
 @Table(name = "shopping_cart")
 class CartSelection extends BaseEntity {
@@ -29,3 +29,5 @@ class CartSelection extends BaseEntity {
     @Column(name = "item_id")
     private Long itemId;
 }
+
+
