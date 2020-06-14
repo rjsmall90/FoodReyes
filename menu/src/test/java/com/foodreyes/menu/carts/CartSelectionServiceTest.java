@@ -29,7 +29,7 @@ public class CartSelectionServiceTest {
     private CartSelection cartSelection;
     private Item item;
 
-    private final static UUID TEST_CUSTOMER_ID = UUID.fromString("5352522f-48a2-4bb9-8108-3b432a99bd6b");
+    private static final UUID TEST_CUSTOMER_ID = UUID.fromString("5352522f-48a2-4bb9-8108-3b432a99bd6b");
     private static final Long TEST_ITEM_NUMBER = 1L;
 
     @Mock

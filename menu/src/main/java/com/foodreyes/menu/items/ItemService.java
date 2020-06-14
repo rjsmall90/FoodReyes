@@ -27,7 +27,7 @@ class ItemService {
     }
 
     Item findItemById(Long itemId) {
-        return itemRepository.getOne(itemId);
+        return itemRepository.findItemByItemId(itemId);
     }
 
     void deleteItem(Long itemId) {
