@@ -1,4 +1,4 @@
-package com.foodreyes.menu.carts;
+package com.foodreyes.menu.customers;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.datatype.jsr310.JavaTimeModule;
@@ -13,51 +13,47 @@ import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.UUID;
 
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(MockitoExtension.class)
-class CartSelectionControllerTest {
+class CustomerControllerTest {
 
-    private CartSelectionDTO cartSelectionDTO;
-    private List<CartSelectionDTO> cartSelectionDTOS;
-    private CartSelection cartSelection;
-
-    private final static UUID TEST_CUSTOMER_ID = UUID.fromString("5352522f-48a2-4bb9-8108-3b432a99bd6b");
+    private Customer customer;
+    private List<Customer> customers;
 
     @Mock
-    private CartSelectionService cartSelectionService;
+    private CustomerService customerService;
 
-    private ObjectMapper objectMapper = new ObjectMapper().registerModule(new JavaTimeModule());
     private MockMvc mockMvc;
+    private ObjectMapper objectMapper = new ObjectMapper().registerModule(new JavaTimeModule());
 
     @BeforeEach
     void setUp() {
-        cartSelectionDTOS = new ArrayList<>();
+        customer = new Customer();
 
-        cartSelection = new CartSelection();
+        customers = new ArrayList<>();
 
-        mockMvc = MockMvcBuilders.standaloneSetup(new CartSelectionController(cartSelectionService)).build();
+        mockMvc = MockMvcBuilders.standaloneSetup(new CustomerController(customerService)).build();
     }
 
     @Test
-    void addItemToCart() throws Exception {
-        mockMvc.perform(post("/api/carts")
+    void createCustomer() throws Exception {
+        mockMvc.perform(post("/api/customers")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(cartSelection)))
+                .content(objectMapper.writeValueAsString(customer)))
                 .andExpect(status().isCreated())
                 .andReturn().getResponse().getContentAsString();
 
     }
 
     @Test
-    void findAllCartSelectionsForCustomer() throws Exception {
-        mockMvc.perform(get("/api/carts/" + TEST_CUSTOMER_ID)
+    void findAllCustomers() throws Exception {
+        mockMvc.perform(get("/api/customers")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(objectMapper.writeValueAsString(cartSelectionDTOS)))
+                .content(objectMapper.writeValueAsString(customers)))
                 .andExpect(status().isOk());
     }
 }

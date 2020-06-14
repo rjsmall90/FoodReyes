@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac26156-f060-437b-9bb7-60864f867cdb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mnode_ical4j_ical4j_3_0_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_2_23_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_modelmapper_modelmapper_2_3_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/menu/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelection.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/BaseEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/BaseEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/items/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/items/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/menu/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,55 +14,34 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionController.java">
+        <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+            <state relative-caret-position="202">
+              <caret line="55" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="55" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/customers/CustomerController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="50" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java">
+        <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/customers/CustomerControllerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="281">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelection.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="148">
-              <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="38" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/BaseEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="59">
-              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            <state relative-caret-position="296">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,7 +52,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
+            <state relative-caret-position="-55">
               <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="105" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -115,8 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/Service/CartService.java" />
-        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/Model/Item.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/Model/Cart.java" />
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/Controller/ItemControllerUnitTest.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/items/ItemRepo.java" />
@@ -163,9 +132,11 @@
         <option value="$PROJECT_DIR$/menu/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionController.java" />
-        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/BaseEntity.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelection.java" />
+        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/BaseEntity.java" />
+        <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/customers/CustomerServiceTest.java" />
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java" />
+        <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/customers/CustomerControllerTest.java" />
       </list>
     </option>
   </component>
@@ -244,7 +215,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="carts" type="462c0819:PsiDirectoryNode" />
+              <item name="customers" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FoodReyes-REST" type="b2602c69:ProjectViewProjectNode" />
@@ -273,7 +244,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592164588536" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592165557577" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -288,6 +259,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.foodreyes.menu.customers" />
       <recent name="com.foodreyes.menu.carts" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
@@ -338,48 +310,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartSelectionControllerTest.findAllCartSelectionsForCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.carts.*" />
+          <option name="PATTERN" value="com.foodreyes.menu.customers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.carts" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.carts.CartSelectionControllerTest" />
-      <option name="METHOD_NAME" value="findAllCartSelectionsForCustomer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CartSelectionServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="menu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.carts.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.carts" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.carts.CartSelectionServiceTest" />
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.customers" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.customers.CustomerControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CartSelectionServiceTest.addItemToCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerControllerTest.createCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.carts.*" />
+          <option name="PATTERN" value="com.foodreyes.menu.customers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.carts" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.carts.CartSelectionServiceTest" />
-      <option name="METHOD_NAME" value="addItemToCart" />
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.customers" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.customers.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="createCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerControllerTest.findAllCustomers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="menu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.foodreyes.menu.customers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.customers" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.customers.CustomerControllerTest" />
+      <option name="METHOD_NAME" value="findAllCustomers" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -395,10 +367,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.CartSelectionControllerTest" />
+        <item itemvalue="JUnit.CustomerControllerTest" />
+        <item itemvalue="JUnit.CustomerControllerTest.findAllCustomers" />
+        <item itemvalue="JUnit.CustomerControllerTest.createCustomer" />
         <item itemvalue="JUnit.CartSelectionControllerTest.addItemToCart" />
-        <item itemvalue="JUnit.CartSelectionControllerTest.findAllCartSelectionsForCustomer" />
-        <item itemvalue="JUnit.CartSelectionServiceTest" />
-        <item itemvalue="JUnit.CartSelectionServiceTest.addItemToCart" />
       </list>
     </recent_temporary>
   </component>
@@ -412,26 +384,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591414803090</updated>
-      <workItem from="1591414805829" duration="48326000" />
+      <workItem from="1591414805829" duration="49273000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CartSelectionControllerTest_addItemToCart - 2020.06.14 at 15h 33m 45s.xml">
-      <configuration name="CartSelectionControllerTest.addItemToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartSelectionControllerTest_addItemToCart - 2020.06.14 at 15h 35m 11s.xml">
-      <configuration name="CartSelectionControllerTest.addItemToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartSelectionControllerTest - 2020.06.14 at 15h 37m 24s.xml">
-      <configuration name="CartSelectionControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartSelectionControllerTest_addItemToCart - 2020.06.14 at 15h 41m 02s.xml">
-      <configuration name="CartSelectionControllerTest.addItemToCart" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="CartSelectionControllerTest_addItemToCart - 2020.06.14 at 15h 41m 42s.xml">
-      <configuration name="CartSelectionControllerTest.addItemToCart" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CartSelectionControllerTest_addItemToCart - 2020.06.14 at 15h 42m 41s.xml">
       <configuration name="CartSelectionControllerTest.addItemToCart" configurationId="JUnit" />
     </history-entry>
@@ -447,13 +404,27 @@
     <history-entry file="CartSelectionControllerTest - 2020.06.14 at 15h 52m 50s.xml">
       <configuration name="CartSelectionControllerTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CartSelectionControllerTest - 2020.06.14 at 15h 56m 03s.xml">
+      <configuration name="CartSelectionControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartSelectionControllerTest - 2020.06.14 at 15h 56m 34s.xml">
+      <configuration name="CartSelectionControllerTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceTest_createCustomer - 2020.06.14 at 16h 03m 50s.xml">
+      <configuration name="CustomerServiceTest.createCustomer" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerServiceTest - 2020.06.14 at 16h 05m 37s.xml">
+      <configuration name="CustomerServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CartSelectionControllerTest_addItemToCart - 2020.06.14 at 16h 09m 26s.xml">
+      <configuration name="CartSelectionControllerTest.addItemToCart" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48326000" />
+    <option name="totallyTimeSpent" value="49273000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -617,16 +588,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/customers/CustomerController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/customers/Customer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
@@ -643,18 +604,6 @@
           <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/customers/CustomerService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="35" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="35" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#371#372#0" expanded="true" />
-            <element signature="e#427#428#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -822,33 +771,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="105" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/javax/persistence/javax.persistence-api/2.2/javax.persistence-api-2.2.jar!/javax/persistence/EntityListeners.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -865,8 +787,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/BaseEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="59">
-          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        <state relative-caret-position="104">
+          <caret line="17" column="48" lean-forward="true" selection-start-line="17" selection-start-column="48" selection-end-line="17" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -875,8 +797,64 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
+        <state relative-caret-position="225">
           <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="38" lean-forward="true" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-55">
+          <caret line="31" column="4" selection-start-line="31" selection-start-column="4" selection-end-line="31" selection-end-column="105" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/customers/CustomerServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="51" column="97" lean-forward="true" selection-start-line="51" selection-start-column="97" selection-end-line="51" selection-end-column="97" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/customers/CustomerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#371#372#0" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/customers/CustomerController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -885,8 +863,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+        <state relative-caret-position="202">
+          <caret line="55" lean-forward="true" selection-start-line="50" selection-start-column="8" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/customers/CustomerControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
