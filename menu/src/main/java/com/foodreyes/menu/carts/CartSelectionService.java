@@ -67,7 +67,11 @@ class CartSelectionService {
 
     private void handleCustomerOrder(CustomerOrder customerOrder, List<CartSelection> cartSelections) {
         customerOrder.setOrderTotal(getCurrentOrderTotal(cartSelections));
-        customerOrderRepository.save(customerOrder);
+        if (cartSelections.size() == 0) {
+            customerOrderRepository.delete(customerOrder);
+        } else {
+            customerOrderRepository.save(customerOrder);
+        }
     }
 
     private BigDecimal getCurrentOrderTotal(List<CartSelection> cartSelections) {

@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aac26156-f060-437b-9bb7-60864f867cdb" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/menu/target/" />
@@ -20,8 +17,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-224">
-              <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+            <state relative-caret-position="167">
+              <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -32,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1497">
-              <caret line="104" column="79" selection-start-line="104" selection-start-column="79" selection-end-line="104" selection-end-column="79" />
+            <state relative-caret-position="281">
+              <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,8 +111,8 @@
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelection.java" />
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionControllerTest.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionController.java" />
-        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionRepository.java" />
+        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java" />
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java" />
       </list>
     </option>
@@ -244,7 +241,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592197061208" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592253132875" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -281,7 +278,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CartSelectionServiceTest">
+  <component name="RunManager" selected="JUnit.CartSelectionServiceTest.addItemToCart_orderDoesNotExist">
     <configuration name="CartSelectionControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
@@ -328,32 +325,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerOrderNotificationBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CartSelectionServiceTest.addItemToCart_orderDoesNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.notifications.*" />
+          <option name="PATTERN" value="com.foodreyes.menu.carts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.notifications" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.notifications.CustomerOrderNotificationBuilderTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.carts" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.carts.CartSelectionServiceTest" />
+      <option name="METHOD_NAME" value="addItemToCart_orderDoesNotExist" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CartSelectionServiceTest.removeItemFromCart" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.notifications.*" />
+          <option name="PATTERN" value="com.foodreyes.menu.carts.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.notifications" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.notifications.CustomerOrderNotificationBuilderTest" />
-      <option name="METHOD_NAME" value="createCustomerOrderNotification" />
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.carts" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.carts.CartSelectionServiceTest" />
+      <option name="METHOD_NAME" value="removeItemFromCart" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -368,11 +366,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CartSelectionServiceTest.addItemToCart_orderDoesNotExist" />
+        <item itemvalue="JUnit.CartSelectionServiceTest.removeItemFromCart" />
         <item itemvalue="JUnit.CartSelectionServiceTest" />
         <item itemvalue="JUnit.CartSelectionControllerTest" />
         <item itemvalue="JUnit.CartSelectionControllerTest.removeItemFromCart" />
-        <item itemvalue="JUnit.CustomerOrderNotificationBuilderTest" />
-        <item itemvalue="JUnit.CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" />
       </list>
     </recent_temporary>
   </component>
@@ -386,48 +384,47 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591414803090</updated>
-      <workItem from="1591414805829" duration="61121000" />
+      <workItem from="1591414805829" duration="62740000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CustomerOrderNotificationServiceTest - 2020.06.14 at 21h 04m 29s.xml">
-      <configuration name="CustomerOrderNotificationServiceTest" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest - 2020.06.15 at 01h 14m 07s.xml">
+      <configuration name="CartSelectionServiceTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerOrderNotificationBuilderTest_createCustomerOrderNotification - 2020.06.14 at 21h 18m 31s.xml">
-      <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_removeItemFromCart - 2020.06.15 at 01h 15m 20s.xml">
+      <configuration name="CartSelectionServiceTest.removeItemFromCart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerOrderNotificationBuilderTest - 2020.06.14 at 21h 20m 01s.xml">
-      <configuration name="CustomerOrderNotificationBuilderTest" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_removeItemFromCart - 2020.06.15 at 01h 15m 55s.xml">
+      <configuration name="CartSelectionServiceTest.removeItemFromCart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerOrderNotificationBuilderTest_createCustomerOrderNotification - 2020.06.14 at 21h 20m 24s.xml">
-      <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_removeItemFromCart - 2020.06.15 at 01h 17m 46s.xml">
+      <configuration name="CartSelectionServiceTest.removeItemFromCart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerOrderNotificationBuilderTest_createCustomerOrderNotification - 2020.06.14 at 21h 20m 40s.xml">
-      <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_addItemToCart_orderDoesNotExist - 2020.06.15 at 01h 18m 12s.xml">
+      <configuration name="CartSelectionServiceTest.addItemToCart_orderDoesNotExist" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerOrderNotificationBuilderTest - 2020.06.14 at 21h 22m 59s.xml">
-      <configuration name="CustomerOrderNotificationBuilderTest" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_removeItemFromCart - 2020.06.15 at 01h 18m 43s.xml">
+      <configuration name="CartSelectionServiceTest.removeItemFromCart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CustomerOrderNotificationBuilderTest - 2020.06.14 at 23h 14m 10s.xml">
-      <configuration name="CustomerOrderNotificationBuilderTest" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_removeItemFromCart - 2020.06.15 at 01h 19m 55s.xml">
+      <configuration name="CartSelectionServiceTest.removeItemFromCart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartSelectionControllerTest_removeItemFromCart - 2020.06.15 at 00h 50m 49s.xml">
-      <configuration name="CartSelectionControllerTest.removeItemFromCart" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_removeItemFromCart - 2020.06.15 at 01h 21m 22s.xml">
+      <configuration name="CartSelectionServiceTest.removeItemFromCart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartSelectionControllerTest_removeItemFromCart - 2020.06.15 at 00h 51m 18s.xml">
-      <configuration name="CartSelectionControllerTest.removeItemFromCart" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_removeItemFromCart - 2020.06.15 at 01h 22m 46s.xml">
+      <configuration name="CartSelectionServiceTest.removeItemFromCart" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="CartSelectionControllerTest - 2020.06.15 at 00h 52m 17s.xml">
-      <configuration name="CartSelectionControllerTest" configurationId="JUnit" />
+    <history-entry file="CartSelectionServiceTest_addItemToCart_orderDoesNotExist - 2020.06.15 at 16h 31m 08s.xml">
+      <configuration name="CartSelectionServiceTest.addItemToCart_orderDoesNotExist" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61121000" />
+    <option name="totallyTimeSpent" value="62740000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Designer" />
       <window_info id="Image Layers" />
@@ -910,8 +907,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartSelectionService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-224">
-          <caret line="24" column="5" selection-start-line="24" selection-start-column="5" selection-end-line="24" selection-end-column="5" />
+        <state relative-caret-position="167">
+          <caret line="42" column="53" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -920,8 +917,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/carts/CartSelectionServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1497">
-          <caret line="104" column="79" selection-start-line="104" selection-start-column="79" selection-end-line="104" selection-end-column="79" />
+        <state relative-caret-position="281">
+          <caret line="110" column="5" selection-start-line="110" selection-start-column="5" selection-end-line="110" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
