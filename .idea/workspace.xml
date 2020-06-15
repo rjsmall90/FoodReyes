@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aac26156-f060-437b-9bb7-60864f867cdb" name="Default Changelist" comment="" />
+    <list default="true" id="aac26156-f060-437b-9bb7-60864f867cdb" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/menu/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,10 +14,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/CustomerOrderMapper.java">
+        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/notifications/CustomerOrderNotificationBuilder.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="16" column="4" selection-start-line="16" selection-start-column="4" selection-end-line="17" selection-end-column="66" />
+            <state relative-caret-position="142">
+              <caret line="29" column="31" selection-start-line="25" selection-start-column="30" selection-end-line="29" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -24,13 +26,26 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/orders/CustomerOrderMapperTest.java">
+        <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/notifications/CustomerOrderNotificationBuilderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+            <state relative-caret-position="1035">
+              <caret line="81" column="61" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
               <folding>
-                <element signature="e#1321#1322#0" expanded="true" />
-                <element signature="e#1427#1428#0" expanded="true" />
+                <element signature="e#1102#1157#1" expanded="true" />
+                <element signature="e#1274#1275#0" expanded="true" />
+                <element signature="e#1311#1312#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/CustomerOrderDTO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="183">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -61,9 +76,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartService.java" />
-        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/OrderRepository.java" />
-        <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/OrderController.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/OrderService.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/carts/CartController.java" />
         <option value="$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/OrderCreator.java" />
@@ -112,6 +124,9 @@
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/orders/CustomerOrderControllerTest.java" />
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/orders/CustomerOrderServiceTest.java" />
         <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/orders/CustomerOrderMapperTest.java" />
+        <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/core/email/EmailServiceTest.java" />
+        <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/notifications/CustomerOrderNotificationServiceTest.java" />
+        <option value="$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/notifications/CustomerOrderNotificationBuilderTest.java" />
       </list>
     </option>
   </component>
@@ -190,27 +205,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="customers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FoodReyes-REST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FoodReyes-REST" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FoodReyes-REST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FoodReyes-REST" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
+              <item name="notifications" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="FoodReyes-REST" type="b2602c69:ProjectViewProjectNode" />
@@ -244,36 +239,6 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="FoodReyes-REST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FoodReyes-REST" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="customers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FoodReyes-REST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FoodReyes-REST" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="items" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="FoodReyes-REST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="FoodReyes-REST" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="menu" type="462c0819:PsiDirectoryNode" />
-              <item name="orders" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -293,7 +258,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592182152391" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1592184174310" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
@@ -308,10 +273,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.foodreyes.menu.notifications" />
+      <recent name="com.foodreyes.menu.core.email" />
       <recent name="com.foodreyes.menu.orders" />
       <recent name="com.foodreyes.menu.items" />
       <recent name="com.foodreyes.menu.customers" />
-      <recent name="com.foodreyes.menu.carts" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -329,37 +295,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerOrderMapperTest.buildCustomerOrderDTO">
-    <configuration name="CustomerOrderControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="menu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.orders.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.orders" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.orders.CustomerOrderControllerTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerOrderMapperTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="menu" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.orders.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.orders" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.orders.CustomerOrderMapperTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.CustomerOrderNotificationBuilderTest">
     <configuration name="CustomerOrderMapperTest.buildCustomerOrderDTO" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
@@ -376,31 +312,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerOrderServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerOrderNotificationBuilderTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.orders.*" />
+          <option name="PATTERN" value="com.foodreyes.menu.notifications.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.orders" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.orders.CustomerOrderServiceTest" />
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.notifications" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.notifications.CustomerOrderNotificationBuilderTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="menu" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.foodreyes.menu.items.*" />
+          <option name="PATTERN" value="com.foodreyes.menu.notifications.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.foodreyes.menu.items" />
-      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.items.ItemControllerTest" />
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.notifications" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.notifications.CustomerOrderNotificationBuilderTest" />
+      <option name="METHOD_NAME" value="createCustomerOrderNotification" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerOrderNotificationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="menu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.foodreyes.menu.notifications.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.notifications" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.notifications.CustomerOrderNotificationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EmailServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="menu" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.foodreyes.menu.core.email.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.foodreyes.menu.core.email" />
+      <option name="MAIN_CLASS_NAME" value="com.foodreyes.menu.core.email.EmailServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -415,11 +382,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CustomerOrderNotificationBuilderTest" />
+        <item itemvalue="JUnit.CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" />
+        <item itemvalue="JUnit.CustomerOrderNotificationServiceTest" />
+        <item itemvalue="JUnit.EmailServiceTest" />
         <item itemvalue="JUnit.CustomerOrderMapperTest.buildCustomerOrderDTO" />
-        <item itemvalue="JUnit.CustomerOrderMapperTest" />
-        <item itemvalue="JUnit.CustomerOrderServiceTest" />
-        <item itemvalue="JUnit.CustomerOrderControllerTest" />
-        <item itemvalue="JUnit.ItemControllerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -433,44 +400,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1591414803090</updated>
-      <workItem from="1591414805829" duration="54116000" />
+      <workItem from="1591414805829" duration="56135000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ItemControllerTest_addItem - 2020.06.14 at 17h 32m 33s.xml">
-      <configuration name="ItemControllerTest.addItem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemControllerTest_addItem - 2020.06.14 at 17h 34m 00s.xml">
-      <configuration name="ItemControllerTest.addItem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemControllerTest_findAllItems - 2020.06.14 at 17h 35m 41s.xml">
-      <configuration name="ItemControllerTest.findAllItems" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemControllerTest_findItemByItemId - 2020.06.14 at 17h 37m 48s.xml">
-      <configuration name="ItemControllerTest.findItemByItemId" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemControllerTest_updateItem - 2020.06.14 at 17h 38m 43s.xml">
-      <configuration name="ItemControllerTest.updateItem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemControllerTest_updateItem - 2020.06.14 at 17h 39m 01s.xml">
-      <configuration name="ItemControllerTest.updateItem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemControllerTest_deleteItem - 2020.06.14 at 17h 40m 22s.xml">
-      <configuration name="ItemControllerTest.deleteItem" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ItemControllerTest - 2020.06.14 at 17h 47m 17s.xml">
-      <configuration name="ItemControllerTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="CustomerOrderControllerTest - 2020.06.14 at 17h 54m 01s.xml">
       <configuration name="CustomerOrderControllerTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="CustomerOrderServiceTest - 2020.06.14 at 20h 06m 12s.xml">
       <configuration name="CustomerOrderServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="CustomerOrderMapperTest - 2020.06.14 at 20h 49m 02s.xml">
+      <configuration name="CustomerOrderMapperTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerOrderMapperTest_buildCustomerOrderDTO - 2020.06.14 at 20h 49m 16s.xml">
+      <configuration name="CustomerOrderMapperTest.buildCustomerOrderDTO" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="EmailServiceTest - 2020.06.14 at 20h 55m 05s.xml">
+      <configuration name="EmailServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerOrderNotificationServiceTest - 2020.06.14 at 21h 04m 29s.xml">
+      <configuration name="CustomerOrderNotificationServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerOrderNotificationBuilderTest_createCustomerOrderNotification - 2020.06.14 at 21h 18m 31s.xml">
+      <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerOrderNotificationBuilderTest - 2020.06.14 at 21h 20m 01s.xml">
+      <configuration name="CustomerOrderNotificationBuilderTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerOrderNotificationBuilderTest_createCustomerOrderNotification - 2020.06.14 at 21h 20m 24s.xml">
+      <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CustomerOrderNotificationBuilderTest_createCustomerOrderNotification - 2020.06.14 at 21h 20m 40s.xml">
+      <configuration name="CustomerOrderNotificationBuilderTest.createCustomerOrderNotification" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54116000" />
+    <option name="totallyTimeSpent" value="56135000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -482,7 +449,7 @@
       <window_info id="Capture Tool" />
       <window_info id="UI Designer" />
       <window_info id="Web" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3297568" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.3297568" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Spring" />
       <window_info anchor="bottom" id="Terminal" weight="0.32971016" />
@@ -495,7 +462,7 @@
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32971016" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47705314" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47705314" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39975846" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -519,24 +486,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/menu/mvnw.cmd">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/MenuApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -660,47 +609,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" column="20" lean-forward="true" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/email/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="29" column="63" selection-start-line="29" selection-start-column="63" selection-end-line="29" selection-end-column="63" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/notifications/CustomerOrderNotificationBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#421#476#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/CustomerOrderDTO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/notifications/CustomerOrderNotificationService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="52" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -952,11 +860,80 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/orders/CustomerOrderMapperTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
+        <state relative-caret-position="-934">
           <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
           <folding>
             <element signature="e#1321#1322#0" expanded="true" />
             <element signature="e#1427#1428#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/core/email/EmailServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/core/email/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/notifications/CustomerOrderNotificationServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/notifications/CustomerOrderNotificationService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="15" column="84" selection-start-line="14" selection-start-column="4" selection-end-line="15" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/orders/CustomerOrderDTO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="183">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/main/java/com/foodreyes/menu/notifications/CustomerOrderNotificationBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="29" column="31" selection-start-line="25" selection-start-column="30" selection-end-line="29" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/menu/src/test/java/com/foodreyes/menu/notifications/CustomerOrderNotificationBuilderTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="81" column="61" selection-start-line="81" selection-start-column="61" selection-end-line="81" selection-end-column="61" />
+          <folding>
+            <element signature="e#1102#1157#1" expanded="true" />
+            <element signature="e#1274#1275#0" expanded="true" />
+            <element signature="e#1311#1312#0" expanded="true" />
           </folding>
         </state>
       </provider>
