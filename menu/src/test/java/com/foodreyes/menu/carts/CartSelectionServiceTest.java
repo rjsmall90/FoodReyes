@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 public class CartSelectionServiceTest {
@@ -31,6 +31,7 @@ public class CartSelectionServiceTest {
 
     private static final UUID TEST_CUSTOMER_ID = UUID.fromString("5352522f-48a2-4bb9-8108-3b432a99bd6b");
     private static final Long TEST_ITEM_NUMBER = 1L;
+    private static final Long TEST_CART_NUMBER = 1L;
 
     @Mock
     private CartSelectionRepository cartSelectionRepository;
@@ -90,5 +91,17 @@ public class CartSelectionServiceTest {
         CartSelection selection = cartSelectionService.addItemToCart(cartSelection);
 
         Assertions.assertEquals(cartSelection, selection, "Selections do not match");
+    }
+
+    @Test
+    public void removeItemFromCart() {
+        when(cartSelectionRepository.findAllCartSelectionsByCustomerId(TEST_CUSTOMER_ID)).thenReturn(cartSelections);
+        when(customerOrderRepository.findNotCompletedCustomerOrderByCustomerId(TEST_CUSTOMER_ID)).thenReturn(customerOrder);
+        when(itemRepository.findItemByItemId(TEST_ITEM_NUMBER)).thenReturn(item);
+        when(customerOrderRepository.save(any(CustomerOrder.class))).thenReturn(customerOrder);
+
+        cartSelectionService.removeItemFromCart(TEST_CART_NUMBER, TEST_CUSTOMER_ID);
+
+        verify(cartSelectionRepository, times(1)).deleteById(TEST_CART_NUMBER);
     }
 }

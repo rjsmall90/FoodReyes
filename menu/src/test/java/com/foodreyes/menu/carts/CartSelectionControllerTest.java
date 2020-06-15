@@ -15,18 +15,17 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
+import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 @ExtendWith(MockitoExtension.class)
 class CartSelectionControllerTest {
 
-    private CartSelectionDTO cartSelectionDTO;
     private List<CartSelectionDTO> cartSelectionDTOS;
     private CartSelection cartSelection;
 
     private final static UUID TEST_CUSTOMER_ID = UUID.fromString("5352522f-48a2-4bb9-8108-3b432a99bd6b");
+    private final static Long TEST_CART_ID = 1L;
 
     @Mock
     private CartSelectionService cartSelectionService;
@@ -59,5 +58,11 @@ class CartSelectionControllerTest {
                 .contentType(MediaType.APPLICATION_JSON)
                 .content(objectMapper.writeValueAsString(cartSelectionDTOS)))
                 .andExpect(status().isOk());
+    }
+
+    @Test
+    void removeItemFromCart() throws Exception {
+        mockMvc.perform(delete("/api/carts/" + TEST_CART_ID + "/" + TEST_CUSTOMER_ID))
+                .andExpect(status().isNoContent());
     }
 }

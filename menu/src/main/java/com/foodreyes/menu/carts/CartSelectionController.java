@@ -25,4 +25,11 @@ public class CartSelectionController {
     public ResponseEntity<List<CartSelectionDTO>> findAllCartSelectionsForCustomer(@PathVariable("customerId")UUID customerId) {
         return ResponseEntity.ok(cartSelectionService.findAllCartSelectionsForCustomer(customerId));
     }
+
+    @DeleteMapping("/carts/{cartId}/{customerId}")
+    public ResponseEntity<?> removeItemFromCart(@PathVariable("cartId") Long cartId,
+                                                @PathVariable("customerId") UUID customerId) {
+        cartSelectionService.removeItemFromCart(cartId, customerId);
+        return new ResponseEntity<>(HttpStatus.NO_CONTENT);
+    }
 }

@@ -28,13 +28,24 @@ class CartSelectionService {
     CartSelection addItemToCart(CartSelection cartSelection) {
         CustomerOrder customerOrder = findOrCreateNewCustomerOrder(cartSelection.getCustomerId());
 
-        List<CartSelection> cartSelections = findAllCartSelectionsForCustomerForCustomerOrderTotal(cartSelection);
+        List<CartSelection> cartSelections = cartSelectionRepository.findAllCartSelectionsByCustomerId(cartSelection.getCustomerId());
+        cartSelections.add(cartSelection);
 
         handleCustomerOrder(customerOrder, cartSelections);
 
         cartSelection.setOrderNumber(customerOrder.getOrderNumber());
 
         return cartSelectionRepository.save(cartSelection);
+    }
+
+    void removeItemFromCart(Long cartId, UUID customerId) {
+        cartSelectionRepository.deleteById(cartId);
+
+        List<CartSelection> cartSelections = cartSelectionRepository.findAllCartSelectionsByCustomerId(customerId);
+
+        CustomerOrder customerOrder = customerOrderRepository.findNotCompletedCustomerOrderByCustomerId(customerId);
+
+        handleCustomerOrder(customerOrder, cartSelections);
     }
 
     private CustomerOrder findOrCreateNewCustomerOrder(UUID customerId) {
@@ -52,13 +63,6 @@ class CartSelectionService {
 
     private boolean doesCustomerOrderAlreadyExist(UUID customerId) {
         return cartSelectionRepository.findCustomerOrderCountByCustomerId(customerId) != 0;
-    }
-
-    private List<CartSelection> findAllCartSelectionsForCustomerForCustomerOrderTotal(CartSelection cartSelection) {
-        List<CartSelection> cartSelections = cartSelectionRepository.findAllCartSelectionsByCustomerId(cartSelection.getCustomerId());
-        cartSelections.add(cartSelection);
-
-        return cartSelections;
     }
 
     private void handleCustomerOrder(CustomerOrder customerOrder, List<CartSelection> cartSelections) {
