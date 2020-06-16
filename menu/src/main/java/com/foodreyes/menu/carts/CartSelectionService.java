@@ -24,7 +24,6 @@ class CartSelectionService {
         return cartSelectionRepository.findCartSelectionDTOsByCustomerId(customerId);
     }
 
-    //TODO: Refactor from here down to be a more OOP solution (break out into new classes/interfaces and write tests)
     CartSelection addItemToCart(CartSelection cartSelection) {
         CustomerOrder customerOrder = findOrCreateNewCustomerOrder(cartSelection.getCustomerId());
 
